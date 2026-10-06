@@ -19,13 +19,13 @@ Skill 是供 AI 编程助手读取的操作指引，附带可执行的检查脚�
 ### 从 GitHub 安装
 
 ```sh
-npx skills add nfjBill/agent-skills --skill ark-v1-upgrade --agent codex
+npx skills add nfjBill/agent-skills --skill ark-v1-upgrade 
 ```
 
 也可使用完整地址：
 
 ```sh
-npx skills add https://github.com/nfjBill/agent-skills --skill ark-v1-upgrade --agent codex
+npx skills add https://github.com/nfjBill/agent-skills --skill ark-v1-upgrade 
 ```
 
 ### 从本地目录安装
@@ -33,12 +33,12 @@ npx skills add https://github.com/nfjBill/agent-skills --skill ark-v1-upgrade --
 将 `/path/to/ARK` 替换成你的 ARK 工作区路径：
 
 ```sh
-npx skills add /path/to/ARK/agent-skills --skill ark-v1-upgrade --agent codex
+npx skills add /path/to/ARK/agent-skills --skill ark-v1-upgrade 
 ```
 
-若克隆的是独立技能库，在其根目录使用 `npx skills add . --skill ark-v1-upgrade --agent codex`。
+若克隆的是独立技能库，在其根目录使用 `npx skills add . --skill ark-v1-upgrade `。
 
-默认安装到当前项目。给 Claude Code 使用时，把 `--agent codex` 改成 `--agent claude-code`；安装到个人目录、供多个项目使用时，可以添加 `--global`。
+默认安装到当前项目。给 Claude Code 使用时，把 `` 改成 `--agent claude-code`；安装到个人目录、供多个项目使用时，可以添加 `--global`。
 
 不使用安装工具时，也可以把完整的 `skills/ark-v1-upgrade/` 文件夹复制到业务项目的 `.agents/skills/ark-v1-upgrade/`（Codex）或 `.claude/skills/ark-v1-upgrade/`（Claude Code）。应一起复制脚本和许可证。
 
@@ -68,8 +68,8 @@ npx skills add /path/to/ARK/agent-skills --skill ark-v1-upgrade --agent codex
 旧版技能名为 `ark-v2-upgrade`。使用 skills CLI 安装的旧版，在原安装范围执行：
 
 ```sh
-npx skills remove ark-v2-upgrade --agent codex
-npx skills add nfjBill/agent-skills --skill ark-v1-upgrade --agent codex
+npx skills remove ark-v2-upgrade 
+npx skills add nfjBill/agent-skills --skill ark-v1-upgrade 
 ```
 
 全局安装时，两条命令均添加 `--global`。手动复制安装的旧版，先移出旧技能目录，再复制新技能完整目录，核对 `SKILL.md` 中的 `name` 为 `ark-v1-upgrade`。不要同时保留两个可发现的升级技能目录。
