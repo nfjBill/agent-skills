@@ -1,9 +1,9 @@
 ---
 name: ark-v1-upgrade
-description: 协助已有 ARK 项目升级到 ARK 1.x（arkcbuild V2），升级 pxnpm 到 7，查询最新正式版本并通过 pxnpm update ark 升级，检查运行时、旧构建插件和配置，验证开发、生产构建和微应用。用于 ARK 消费项目升级，不用于维护 ARK 构建核心本身。
+description: 协助已有 ARK 项目升级到 Ark v1 正式版（1.x），升级 pxnpm 到 7，查询最新正式版本并通过 pxnpm update ark 升级，检查运行时、旧构建插件和配置，验证开发、生产构建和微应用。用于 ARK 消费项目升级，不用于维护 ARK 构建核心本身。
 ---
 
-ARK 产品版本为 1.x，arkcbuild V2 是构建核心代际；核心与插件保留各自版本线，不将其版本改为前端版本。测试包需由用户明确选择 beta 标签或具体预发布版本。
+技能名为 `ark-v1-upgrade`，升级目标为 Ark v1 正式版（1.x）。发布仓库为 [nfjBill/agent-skills](https://github.com/nfjBill/agent-skills)，安装与路径说明见仓库根目录 README。核心与插件保留各自版本线，不将其版本改为前端版本。测试包需由用户明确选择 beta 标签或具体预发布版本。
 
 先检查项目，再按真实失败修复。目标是保持 `arkc`、`arkclib`、`ark-plus`、`pxnpm` 命令，`ark.config.*`、`WORKSPACE_PWD`、`ARK_` / `ARK_PLUS_` 配置和既有部署产物习惯。
 
