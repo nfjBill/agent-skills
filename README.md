@@ -38,10 +38,6 @@ npx skills add /path/to/ARK/agent-skills --skill ark-v1-upgrade
 
 若克隆的是独立技能库，在其根目录使用 `npx skills add . --skill ark-v1-upgrade `。
 
-默认安装到当前项目。给 Claude Code 使用时，把 `` 改成 `--agent claude-code`；安装到个人目录、供多个项目使用时，可以添加 `--global`。
-
-不使用安装工具时，也可以把完整的 `skills/ark-v1-upgrade/` 文件夹复制到业务项目的 `.agents/skills/ark-v1-upgrade/`（Codex）或 `.claude/skills/ark-v1-upgrade/`（Claude Code）。应一起复制脚本和许可证。
-
 安装工具的来源、参数和支持的客户端见 [skills CLI 官方仓库](https://github.com/vercel-labs/skills)。
 
 ## 让助手执行升级
