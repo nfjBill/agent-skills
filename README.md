@@ -61,19 +61,6 @@ npx skills add /path/to/ARK/agent-skills --skill ark-v1-upgrade
 最后交付修改说明、验证结果和未验证的具体场景。
 ```
 
-在 Codex 中也可以使用 `$ark-v1-upgrade` 明确调用。技能未出现在选择列表时，可以重新加载或重启客户端后再试。
-
-### 从旧名称迁移
-
-旧版技能名为 `ark-v2-upgrade`。使用 skills CLI 安装的旧版，在原安装范围执行：
-
-```sh
-npx skills remove ark-v2-upgrade 
-npx skills add nfjBill/agent-skills --skill ark-v1-upgrade 
-```
-
-全局安装时，两条命令均添加 `--global`。手动复制安装的旧版，先移出旧技能目录，再复制新技能完整目录，核对 `SKILL.md` 中的 `name` 为 `ark-v1-upgrade`。不要同时保留两个可发现的升级技能目录。
-
 ### 升级环境
 
 升级需要业务项目能访问目标 ARK 包的 registry，或取得对应的本地 tarball。业务构建运行时需要 Node 20.19+ 或 22.12+；下面的检查脚本需要 Python 3，且仅使用标准库。
